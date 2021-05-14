@@ -8,8 +8,8 @@
 		<version>2.3.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.walmart.wbs</groupId>
-	<artifactId>smartcloudcostanalyzer</artifactId>
+	<groupId>com.ved.covid.vaccine</groupId>
+	<artifactId>covidVaccineSlotFinder</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>smartcloudcostanalyzer</name>
 	<description>Smart cloud cost analyzer</description>
