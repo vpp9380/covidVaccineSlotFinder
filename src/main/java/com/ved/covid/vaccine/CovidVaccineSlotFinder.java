@@ -30,32 +30,6 @@ public class CovidVaccineSlotFinder {
 		new CovidVaccineSlotFinder().executeCommand(command, cmd);
 	}
 
-	static void esService(String command) {
-
-		try {
-			Process p = Runtime.getRuntime().exec(command);
-			//Process p = Runtime.getRuntime().exec("sc config MSSQLSERVER start= demand");
-			p.waitFor();
-			String line = null;
-			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(p.getInputStream()));
-			while((line = bufferedReader.readLine()) != null) {
-				System.out.println(line);
-			}
-
-
-			/*line = null;
-			bufferedReader = null;
-			Process process = new ProcessBuilder(cmd).start();
-			process.waitFor();
-			bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-			while((line = bufferedReader.readLine()) != null) {
-				System.out.println(line);
-			}*/
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 
 	private void executeCommand(String command,  String [] cmd) throws Exception {
 		try {
@@ -102,12 +76,13 @@ public class CovidVaccineSlotFinder {
 								}
 							}catch (Exception e) {
 								//e.printStackTrace();
-								System.out.println("Bummer center");
+								System.out.println("Bummer centers");
 							}
 						}
 					}catch (Exception e) {
 						//e.printStackTrace();
-						System.out.println("Bummer center -------");
+						System.out.println("Bummer in site. I mean site is not not accepting the request. Let's keep trying");
+						line = null; // hack to break while loop
 					}
 				}
 
