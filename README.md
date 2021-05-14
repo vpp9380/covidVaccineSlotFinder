@@ -1,6 +1,6 @@
 (1) TOGETHER WE SHALL WIN
 (2) Happy vaccinating.
-(3) This is a developer friendly JAVA app to show the covid vaccine availability at centers based on the disctricts. Once it fins the available slots it will beep for sometime. SO, you can run it in parallel and can do your work. 
+(3) This is a developer friendly JAVA app to show the covid vaccine availability at centers based on the disctricts. Once it finds the available slots it will beep for sometime. So, you can run it and can do your work in parallel. 
 Please find your district and its id below (if not listed, please mail me vpp9380@gmail.com and I will add here)
   1. Bagalkot 	270
   2. Bangalore Rural 	276
