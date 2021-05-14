@@ -16,6 +16,11 @@ import java.util.Scanner;
 public class CovidVaccineSlotFinder {
 
 	public static void main(String[] args) throws Exception{
+		if(args.length <= 0){
+			System.out.println("Invalid usage. Run as below:");
+			System.out.println("java -jar covidVaccineSlotFinder-0.0.1-SNAPSHOT.jar <district_code>");
+			System.exit(0);
+		}
 		String command = "curl --location --request GET 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=294&date=13-05-2021' --header 'User-Agent:%20Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,like%20Gecko)%20Chrome/90.0.4430.93%20Safari/537.36'";
 		//SpringApplication.run(CovidVaccineSlotFinder.class, args);
 		//esService(command);
