@@ -1,9 +1,9 @@
 # covidVaccineSlotFinder 
 This is a developer friendly JAVA app to show the covid vaccine availability at centers based on the disctricts.
 Please find your district and its id below (if not listed, please mail me vpp9380@gmail.com and I will add here)
-  Bagalkot 	270
-  Bangalore Rural 	276
-  Bangalore Urban 	265
+  1. Bagalkot 	270
+  2. Bangalore Rural 	276
+  3. Bangalore Urban 	265
   BBMP 	294
   Belgaum 	264
   Bellary 	274
