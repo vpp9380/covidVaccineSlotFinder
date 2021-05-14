@@ -38,5 +38,5 @@ Developer guide:
 1. Clone
 2. mvn clean package
 3. In target folder a jar will be crerated.
-4. Go to target folder and in cmd/shell run the command: java -jar covidVAccineSlotFinder-<version>..jar <District_ID>
+4. Go to target folder and in cmd/shell run the command: java -jar covidVAccineSlotFinder-<<version>>.jar <District_ID>
 5. Find the district id in above list.
