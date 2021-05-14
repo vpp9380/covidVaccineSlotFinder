@@ -15,6 +15,8 @@ import java.util.Scanner;
 @SpringBootApplication
 public class CovidVaccineSlotFinder {
 
+	private static int DELAY_IN_MILLISECS = 10000;
+
 	public static void main(String[] args) throws Exception{
 		if(args.length <= 0){
 			System.out.println("Invalid usage. Run as below:");
@@ -88,13 +90,14 @@ public class CovidVaccineSlotFinder {
 						//e.printStackTrace();
 						System.out.println("Bummer in site. I mean site is not not accepting the request. Let's keep trying");
 						line = null; // hack to break while loop
+						break;
 					}
 				}
 
 				//logOutput(process.getErrorStream(), "Error: ");
 				process.waitFor();
 				System.out.println("No luck, run = " + run);
-				Thread.sleep(2000);
+				Thread.sleep(DELAY_IN_MILLISECS);
 				run++;
 			}
 
